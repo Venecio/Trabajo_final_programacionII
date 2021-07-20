@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,auto);
+    column-gap: 20px;
+}
+.item{
+    border: 1px black solid;
+    
+}
