@@ -13,12 +13,12 @@ if ($_GET['eleccion'] == "Hamburguesa") {
             $path=$row['producto_imagen'];
         ?>
             <div class="item">
-            <img src=<?php echo "$path"; ?> width="200" height="200">
+            <img src=<?php echo "recursos/$path"; ?> width="200" height="200">
                 <td><?php echo $row['producto_nombre'] ?></td><br>
                 <td><?php echo $row['producto_descripcion'] ?></td><br>
                 <td><?php echo $row['tipo_producto'] ?></td><br>
                 <td><?php echo "$" . $row['producto_precio'] ?></td><br>
-                <td><?php echo '<a class="comprarbttn" href="' . htmlspecialchars("../../visual/modificarform.php?id=" . urlencode($row['id_producto']))
+                <td><?php echo '<a class="comprarbttn" href="' . htmlspecialchars("../carrito/carrito.php?id=" . urlencode($row['id_producto'])."&eleccion=Hamburguesa")
                         . '" >Comprar</a>' ?></td>
             </div>
         <?php
@@ -28,7 +28,6 @@ if ($_GET['eleccion'] == "Hamburguesa") {
 <?php
 } elseif ($_GET['eleccion'] == "Pizza") {
     require("../conexion/conexion.php");
-
 ?>
 
     <div class="contenedor">
@@ -42,7 +41,7 @@ if ($_GET['eleccion'] == "Hamburguesa") {
                 <td><?php echo $row['producto_descripcion'] ?></td><br>
                 <td><?php echo $row['tipo_producto'] ?></td><br>
                 <td><?php echo "$" . $row['producto_precio'] ?></td><br>
-                <td><?php echo '<a class="comprarbttn" href="' . htmlspecialchars("../../visual/modificarform.php?id=" . urlencode($row['id_producto']))
+                <td><?php echo '<a class="comprarbttn" href="' . htmlspecialchars("../carrito/carrito.php?id=" . urlencode($row['id_producto'])."&eleccion=Pizza")
                         . '" >Comprar</a>' ?></td>
             </div>
         <?php
@@ -62,12 +61,12 @@ if ($_GET['eleccion'] == "Hamburguesa") {
         while ($row = mysqli_fetch_array($result)) {
         ?>
             <div class="item">
-                <td><?php echo $row['producto_nombre'] ?></td><br>
-                <td><?php echo $row['producto_descripcion'] ?></td><br>
-                <td><?php echo $row['tipo_producto'] ?></td><br>
-                <td><?php echo "$" . $row['producto_precio'] ?></td><br>
-                <td><?php echo '<a class="comprarbttn" href="' . htmlspecialchars("../../visual/modificarform.php?id=" . urlencode($row['id_producto']))
-                        . '" >Comprar</a>' ?></td>
+                <?php echo $row['producto_nombre'] ?><br>
+                <?php echo $row['producto_descripcion'] ?><br>
+                <?php echo $row['tipo_producto'] ?><br>
+                <?php echo "$" . $row['producto_precio'] ?><br>
+                <?php echo '<a class="comprarbttn" href="' . htmlspecialchars("../carrito/carrito.php?id=" . urlencode($row['id_producto'])."&eleccion=Bebidas")
+                        . '" >Comprar</a>' ?>
             </div>
         <?php
         }
