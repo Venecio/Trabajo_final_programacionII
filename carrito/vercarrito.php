@@ -10,23 +10,35 @@ session_start();
 </head>
 
 <body>
-    <h2>Productos que hay actualmente</h2>
-    <table>
-        <tr>
-            <th>Producto</th>
-            <th>Descripcion</th>
-            <th>Precio</th>
-        </tr>
-        
+    
+
         <?php
-        
-        $id_user=$_SESSION['id_user'];
-            $consulta = "SELECT *
+
+        $id_user = $_SESSION['id_user'];
+        $consulta = "SELECT *
             FROM compras,productos,usuarios
-            WHERE compras.id_user = usuarios.id_user AND productos.id_producto = compras.id_producto AND compras.estado_compra = 0 AND compras.id_user = $id_user";
+            WHERE compras.id_user = usuarios.id_user AND productos.id_producto = compras.id_producto 
+            AND compras.estado_compra = 0 AND compras.id_user = $id_user";
         $resultado = mysqli_query($conexion, $consulta);
-        $c=0;
-        while ($row = mysqli_fetch_array($resultado)) {
+        if(mysqli_num_rows($resultado)>0){
+        ?>
+
+
+        <h2>Productos que hay actualmente</h2>
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+            </tr>
+        <?php
+        $c = 0; 
+        $numero_compra = 0;   
+
+        while ($row= mysqli_fetch_array($resultado)) {
+            if($c==0){
+                $numero_compra=$row['numero_compra'];
+            }
         ?>
             <tr>
                 <td><?php echo $row['producto_nombre'] ?></td>
@@ -34,19 +46,29 @@ session_start();
                 <td><?php echo "$" . $row['producto_precio'] ?></td>
                 <td><?php echo '<a class="eliminar" href="' . htmlspecialchars("eliminarproducto.php?id=" . urlencode($row['id_producto']))
                         . '" >Eliminar</a>' ?></td>
-                
+
             </tr>
-            <?php $total[$c]=$row['producto_precio']?>
+            <?php 
+             $total[$c] = $row['producto_precio'] ?>
+             
         <?php
-        $c++;
+            $c++;
         }
-        
+
         ?>
+        
         <tr>
-            <th>Total $<?php echo array_sum($total)?></th>
+            <th>Total $<?php echo array_sum($total) ?></th>
         </tr>
 
     </table>
+    <?php echo '<a class="eliminar" href="' . htmlspecialchars("compradef.php?numero_compra=" . urlencode($numero_compra))
+                        . '" >Comprar</a>' ?>
+    <?php
+    }else{
+        echo "<h2>No hay nada en el carrito</h2>";  
+    }
+    ?>
 </body>
 
 </html>

@@ -14,7 +14,7 @@ if(isset($_SESSION['username'])){
 </head>
 
 <body>
-    <form action="verificar.php" method="post">
+    <form action="verificarlogin.php" method="post">
         <input type="text" name="username" placeholder="Usuario" pattern="[A-Za-z0-9_-]{1,15}"required>
         <input type="password" name="password" placeholder="Contraseña" pattern="[A-Za-z0-9_-]{1,15}"required>
         <input type="submit" name="enviar"> 

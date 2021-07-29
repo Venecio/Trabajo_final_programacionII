@@ -34,6 +34,7 @@ if ($_GET['eleccion'] == "Hamburguesa") {
         <?php
         $consulta = "SELECT * FROM productos WHERE producto_nombre LIKE '%" . "Pizza" . "%'";
         $result = mysqli_query($conexion, $consulta);
+
         while ($row = mysqli_fetch_array($result)) {
         ?>
             <div class="item">
