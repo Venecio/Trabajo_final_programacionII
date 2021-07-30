@@ -38,11 +38,14 @@ if ($cantidad_productos_carrito > 0) {
 
 // Redireccionamos a la pagina de la cual estamos comprando para mejorar la usabilidad del cliente 
 if ($_GET['eleccion'] == 'hamburguesas') {
-    header("Location: /Trabajo_final_programacionII/productos/verproductos.php?eleccion=hamburguesas");
+    header("Location: /tienda/productos/verproductos.php?eleccion=hamburguesas");
 }
 if ($_GET['eleccion'] == 'pizzas') {
-    header("Location: /Trabajo_final_programacionII/productos/verproductos.php?eleccion=pizzas");
+    header("Location: /tienda/productos/verproductos.php?eleccion=pizzas");
 }
 if ($_GET['eleccion'] == 'bebidas') {
-    header("Location: /Trabajo_final_programacionII/productos/verproductos.php?eleccion=bebidas");
+    header("Location: /tienda/productos/verproductos.php?eleccion=bebidas");
+}
+if ($_GET['eleccion'] == 'postres') {
+    header("Location: /tienda/productos/verproductos.php?eleccion=postres");
 }
