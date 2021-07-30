@@ -1,5 +1,5 @@
 <?php
-require("../conexion/conexion.php");
+require("../conexion/conexion.php"); //cambiar nombres de variables
 if(isset($_POST['enviar'])&&(!empty($_POST['enviar']))){
     $user=$_POST['username'];
     $password=$_POST['password'];

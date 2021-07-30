@@ -1,12 +1,19 @@
 <?php
 require("../conexion/conexion.php");
-session_start();
+include("../menu.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Productos actuales en carrito</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Scar bootstrap e importar tus css-->
+    
 </head>
 
 <body>
@@ -44,8 +51,7 @@ session_start();
                 <td><?php echo $row['producto_nombre'] ?></td>
                 <td><?php echo $row['producto_descripcion'] ?></td>
                 <td><?php echo "$" . $row['producto_precio'] ?></td>
-                <td><?php echo '<a class="eliminar" href="' . htmlspecialchars("eliminarproducto.php?id=" . urlencode($row['id_producto']))
-                        . '" >Eliminar</a>' ?></td>
+                <td><?php echo '<a class="eliminar" href="' . htmlspecialchars("eliminarproducto.php?id_compra=" . urlencode($row['id_compra'])) . '" >Eliminar</a>' ?></td>
 
             </tr>
             <?php 
@@ -62,8 +68,7 @@ session_start();
         </tr>
 
     </table>
-    <?php echo '<a class="eliminar" href="' . htmlspecialchars("compradef.php?numero_compra=" . urlencode($numero_compra))
-                        . '" >Comprar</a>' ?>
+    <?php echo '<a class="eliminar" href="' . htmlspecialchars("compras.php?numero_compra=" . urlencode($numero_compra)) . '" >Comprar</a>' ?>
     <?php
     }else{
         echo "<h2>No hay nada en el carrito</h2>";  

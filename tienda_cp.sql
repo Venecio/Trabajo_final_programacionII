@@ -55,12 +55,12 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id_producto`, `producto_nombre`, `producto_precio`, `producto_descripcion`, `tipo_producto`, `producto_imagen`) VALUES
-(1, 'Hamburguesa de queso', 250, 'Hamburguesa con pan fresco con queso', 'comida', 'hamburguesa.jpg'),
-(2, 'Coca cola', 150, 'Gaseosa completamente saludable', 'bebida', ''),
-(3, 'Pizza a la piedra', 300, 'Pizza hecha a la piedra con una masa fina', 'comida', ''),
-(4, 'Jamon', 100, 'Libera texturas y aromas que conquistan a los paladares más exigentes.', 'embutidos', ''),
-(5, 'Hamburguesa con papas', 300, 'Hamburguesa de carne primera calidad acompañado con papas medianas', 'comida', 'hamburguesa-papas.jpg'),
-(6, 'Hamburguesa doble', 300, 'Hamburguesa de carne primera calidad ahora doble. ', 'comida', 'hamburguesa-doble.jpg');
+(1, 'Hamburguesa de queso', 250, 'Hamburguesa con pan fresco con queso', 'hamburguesas', 'hamburguesa.jpg'),
+(2, 'Coca cola', 150, 'Gaseosa completamente saludable', 'bebidas', ''),
+(3, 'Pizza a la piedra', 300, 'Pizza hecha a la piedra con una masa fina', 'pizzas', ''),
+(4, 'Helado de limon', 100, 'Libera texturas y aromas que conquistan a los paladares más exigentes.', 'postres', ''),
+(5, 'Hamburguesa con papas', 300, 'Hamburguesa de carne primera calidad acompañado con papas medianas', 'hamburguesas', 'hamburguesa-papas.jpg'),
+(6, 'Hamburguesa doble', 300, 'Hamburguesa de carne primera calidad ahora doble. ', 'hamburguesas', 'hamburguesa-doble.jpg');
 
 -- --------------------------------------------------------
 
