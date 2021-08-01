@@ -1,29 +1,59 @@
-*{
-    padding: 0;
-    margin: 0;
+  * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Bebas Neue', cursive;
+  }
+
+  body {
+      background-color: #fafafa;
+  }
+
+  .menu {
+      display: inline-block;
+      width: 100%;
+      background: rgb(251, 123, 76);
+
+      text-align: center;
+      display: inline-block;
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+  }
+
+  .menu .productos {
+      float: left;
+      display: block;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .menu .pr_derecha {
+      display: block;
+      float: right;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .li-izquierda {
+      margin-left: 20px;
+  }
+
+
+  .li-derecha {
+      margin-right: 20px;
+  }
+
+ #fuente {
+      color: rgba(20, 2, 2, 0.938);
+      font-size: 18px;
+      text-decoration: none;
+  }
+#fuente:hover{
+    color: rgb(251, 251, 251);
+    transition: 0.2s;
 }
-body{
-    background-color:  #fafafa;
-}
-.menucompleto{
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-}
-.menu{
-    list-style: none;
-    display: inline-block;
-    width: 90%;
-    background: coral;
-    padding: 20px;
-    margin: 10px;
-}
-.menu .productos{
-    float: left;
-    display: block;
-    padding-left: 15px;
-}
-.menu .pr_derecha{
-    float: right;
-    padding-left: 15px;
-}
+i {
+    margin-right: 5px;
+  }
+  

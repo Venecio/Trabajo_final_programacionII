@@ -20,6 +20,8 @@ $resultado = mysqli_query($conexion, $consulta);
     </tr>
 
     <?php
+
+    $total_compra = 0;
     while ($row = mysqli_fetch_array($resultado)) {
     ?>
         <tr class="item">
@@ -28,6 +30,8 @@ $resultado = mysqli_query($conexion, $consulta);
             <td><?php echo $row['producto_descripcion'] ?></td>
         </tr>
     <?php
+    $total_compra = $total_compra + $row['producto_precio'];
     }
     ?>
 </table>
+<h3>Total de la compra: <?php echo $total_compra;  ?> </h3>
