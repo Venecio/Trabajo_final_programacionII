@@ -5,15 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../../tienda/productos/recursos/favicon/icono.png" type="image/x-icon">
+
     <title>Registrar Usuario</title>
 </head>
 
 <body>
-    <form action="registro.php" method="post">
-        <input type="text" name="username" placeholder="Usuario" pattern="[A-Za-z0-9_-]{1,15}" required>
-        <input type="password" name="password" placeholder="Contraseña" pattern="[A-Za-z0-9_-]{1,15}" required >
-        <input type="email" name="email" placeholder="Correo" required>
-        <input type="submit" name="registro">
+    <form class="formulario2" action="registro.php" method="post">
+        <h1 class="titulo">Registrarse</h2>
+            <input class="input-register" type="text" name="username" placeholder="Usuario"
+                pattern="[A-Za-z0-9_-]{1,15}" required>
+            <input class="input-register" type="password" name="password" placeholder="Contraseña"
+                pattern="[A-Za-z0-9_-]{1,15}" required>
+            <input class="input-register" type="email" name="email" placeholder="Correo" required>
+            <input class="boton" type="submit" name="registro" value="Registrarme">
     </form>
 
 </body>

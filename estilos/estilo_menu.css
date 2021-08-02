@@ -4,9 +4,7 @@
       font-family: 'Bebas Neue', cursive;
   }
 
-  body {
-      background-color: #fafafa;
-  }
+
 
   .menu {
       display: inline-block;
@@ -44,16 +42,74 @@
       margin-right: 20px;
   }
 
- #fuente {
+  #fuente {
       color: rgba(20, 2, 2, 0.938);
       font-size: 18px;
       text-decoration: none;
   }
-#fuente:hover{
-    color: rgb(251, 251, 251);
-    transition: 0.2s;
-}
-i {
-    margin-right: 5px;
+
+  #fuente:hover {
+      color: rgb(251, 251, 251);
+      transition: 0.2s;
   }
-  
+
+  i {
+      margin-right: 5px;
+  }
+
+  /*Estilo de vercarrito.php*/
+  body {
+      width: 100%;
+      position: relative;
+  }
+
+  .h2-carrito {
+      color: black;
+      display: block;
+      text-align: center;
+
+  }
+
+  .eliminar,
+  .bttn-comprar {
+      text-decoration: none;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      border: 2px solid coral;
+
+  }
+
+  .eliminar:hover {
+      background-color: #f44336;
+      color: white;
+  }
+
+  .bttn-comprar:hover {
+      background-color: #f44336;
+      color: white;
+  }
+
+  .tabla-carrito {
+      border-collapse: collapse;
+      width: 70%;
+      text-align: center;
+      margin: auto;
+      border: 4px double black;
+
+  }
+
+  .cth {
+      background-color: coral;
+  }
+
+  .cthtotal {
+      border: 1px solid black;
+  }

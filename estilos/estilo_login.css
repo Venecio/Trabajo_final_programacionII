@@ -3,14 +3,17 @@
     padding: 0;
     font-family: 'Bebas Neue', cursive;
 }
-body,html {
+
+body,
+html {
     background-color: rgb(253, 253, 253);
     width: 100%;
     height: 100%;
     position: relative;
 
 }
-.formulario{
+
+.formulario {
     border: 1px solid black;
     border-radius: 5px;
     padding: 30px;
@@ -18,34 +21,65 @@ body,html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 2fr;
     box-shadow: 0 0 15px 0 rgba(32, 3, 3, 0.3);
 
 }
-.input{
+
+.input {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
     width: auto;
 
 }
-.boton{
-    background-color: coral;
+
+.boton {
+    background-color: rgb(250, 123, 77);
     padding: 13px;
     text-align: center;
     grid-column: 1 / 2;
     border-radius: 10px;
 }
-.formulario .titulo{
+
+.formulario .titulo {
     text-align: center;
     margin-bottom: 50px;
 }
-.botonregistro{
+
+.botonregistro {
     grid-column: 1 / 2;
-    
+
 }
-label{
+
+label {
     margin-top: 10px;
+}
+
+/*Registrarse.html*/
+.formulario2 {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 2fr;
+    box-shadow: 0 0 15px 0 rgba(32, 3, 3, 0.3);
+}
+
+.input-register {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: auto;
+}
+.formulario2 .titulo{
+    text-align: center;
+    margin-bottom: 50px;
 }

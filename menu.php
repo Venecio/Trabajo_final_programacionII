@@ -15,6 +15,7 @@ $rows = mysqli_num_rows($resultado);   //ver productos del carrito();
 <script src="https://kit.fontawesome.com/c0bb3670ef.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/tienda/estilos/estilo_menu.css">
 
+
 <nav class="menu">
     <li class="productos li-izquierda"><a id="fuente" href="/tienda/index.php">Inicio</a></li>
     <li class="productos"><a id="fuente" href="/tienda/productos/verproductos.php?eleccion=hamburguesas">Hamburguesas</a></li>

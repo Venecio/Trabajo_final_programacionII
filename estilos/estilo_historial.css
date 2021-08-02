@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+body {
+    width: 100%;
+}
+
+.tabla {
+
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border: 3px double black;
+    height: 150px;
+    vertical-align: bottom;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.hth {
+    border: 1px solid black;
+
+}
+.htd{
+    border: 1px solid black;
+}
+.htitulo{
+    text-align: center;
+}
+.vercompra{
+    text-decoration: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid coral;
+}
+.vercompra:hover{
+    background-color: #f44336;
+      color: white;
+}

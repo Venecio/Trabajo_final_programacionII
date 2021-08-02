@@ -15,6 +15,8 @@ if (isset($_SESSION['username'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c0bb3670ef.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../../tienda/productos/recursos/favicon/icono.png" type="image/x-icon">
+
     <title>Bienvenido, ingrese su usuario</title>
 </head>
 
@@ -24,7 +26,7 @@ if (isset($_SESSION['username'])) {
 
         <form class="formulario" action="verificarlogin.php" method="post">
             <h1 class="titulo">Inicia sesión o crea una cuenta <i class="fas fa-pizza-slice"></i></h1>
-            
+
             <input class="input" type="text" name="username" placeholder="Usuario" pattern="[A-Za-z0-9_-]{1,15}" required><br>
             <input class="input" type="password" name="password" placeholder="Contraseña" pattern="[A-Za-z0-9_-]{1,15}" required><br></i>
             <input class="boton" type="submit" name="Ingresar" value="Ingresar">
