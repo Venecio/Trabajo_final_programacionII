@@ -70,12 +70,11 @@
 
   }
 
-  .eliminar,
+
   #bttn-comprar {
       text-decoration: none;
-      padding: 16px 32px;
+      padding: 5px;
       text-align: center;
-      text-decoration: none;
       display: inline-block;
       font-size: 16px;
       margin: 4px 2px;
@@ -84,7 +83,25 @@
       background-color: white;
       color: black;
       border: 2px solid coral;
+      
+      
 
+  }
+
+  .eliminar {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid coral;
+    background-color: indianred;
   }
 
   .eliminar:hover {
@@ -99,11 +116,16 @@
 
   .tabla-carrito {
       border-collapse: collapse;
-      width: 70%;
+      width: 50%;
       text-align: center;
       margin: auto;
-      border: 4px double black;
-
+      border: 3px double black;
+      height: 150px;
+      vertical-align: bottom;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
   }
 
   .cth {
@@ -112,4 +134,9 @@
 
   .cthtotal {
       border: 1px solid black;
+  }
+
+  .ctd {
+      border: 1px solid black;
+      font-family: 'Roboto', sans-serif;
   }

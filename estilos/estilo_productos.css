@@ -4,15 +4,13 @@
 }
 
 .contenedor {
-
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
 
 }
 .item {
-    border: 1px black solid;
     width: auto;
-
-
+    box-shadow: 0 0 15px 0 rgba(32, 3, 3, 0.3);
 }

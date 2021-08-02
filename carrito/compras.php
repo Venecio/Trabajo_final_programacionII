@@ -7,4 +7,5 @@ $consulta="UPDATE compras
             SET estado_compra = 1
             WHERE numero_compra = $numero_compra
             AND id_user = $id_user";
-$resultado=mysqli_query($conexion,$consulta);    
+$resultado=mysqli_query($conexion,$consulta);  
+header("Location: ../index.php");  

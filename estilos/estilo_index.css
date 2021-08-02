@@ -15,7 +15,7 @@
     color: coral;
 }
 .slider{
-    width: 95%;
+    width: 60%;
     margin: auto;
     overflow: hidden;
 }
@@ -31,7 +31,6 @@
 }
 .slider img{
     width: 100%;
-    height: 480px;
 }
 @keyframes cambio {
     0% {margin-left:0;}

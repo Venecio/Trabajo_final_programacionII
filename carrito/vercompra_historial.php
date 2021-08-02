@@ -11,17 +11,18 @@ $resultado = mysqli_query($conexion, $consulta);
 ?>
 <title>Compra detallada</title>
 <link rel="stylesheet" href="../estilos/estilo_historial.css">
-<h1 class="htitulo">Productos correspondientes a su compra</h1>
 <link rel="shortcut icon" href="../../tienda/productos/recursos/favicon/icono.png" type="image/x-icon">
+<h1 class="htitulo">Productos correspondientes a su compra</h1>
 
-<table class="tabla">
+<table class="ver_tabla">
     <tr>
-        <th class="hth">Numero compra: <?php echo $numero_compra; ?></th>
+        <th colspan="4" >Numero compra: <?php echo $numero_compra; ?></th>
     </tr>
     <tr>
-        <th class="hth">Numero compra</th>
-        <th class="hth">Precio</th>
-        <th class="hth">Descripcion</th>
+        <th class="h-th">Producto</th>
+        <th class="h-th">Descripcion</th>
+        <th class="h-th">Precio</th>
+
     </tr>
 
     <?php
@@ -30,19 +31,20 @@ $resultado = mysqli_query($conexion, $consulta);
     while ($row = mysqli_fetch_array($resultado)) {
     ?>
         <tr class="item">
-            <td><?php echo $row['producto_nombre'] ?></td>
-            <td><?php echo "$".$row['producto_precio'] ?></td>
-            <td><?php echo $row['producto_descripcion'] ?></td>
+            <td class="h-td"><?php echo $row['producto_nombre'] ?></td>
+            <td class="h-td"><?php echo $row['producto_descripcion'] ?></td>
+            <td class="h-td"><?php echo "$" . $row['producto_precio'] ?></td>
+
         </tr>
 
     <?php
         $total_compra = $total_compra + $row['producto_precio'];
     }
     ?>
-    <tr class="hth">
-        <th>Total de la compra: </th>
-        <th><?php echo "$".$total_compra; ?></th>
+    <tr class="">
+        <th colspan="2">Total de la compra: </th>
+        <th class="h-th" colspan="2"><?php echo "$" . $total_compra; ?></th>
     </tr>
-   
-   
+
+
 </table>

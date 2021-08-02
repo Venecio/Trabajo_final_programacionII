@@ -12,11 +12,13 @@ $resultado = mysqli_query($conexion, $consulta);
 if (mysqli_num_rows($resultado) > 0) {
 ?>
 
-<title>Historial de compras</title>
+    <title>Historial de compras</title>
 
     <body>
         <link rel="stylesheet" href="../estilos/estilo_historial.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <div class="contenedor">
             <table class="tabla">
                 <tr>
@@ -40,7 +42,7 @@ if (mysqli_num_rows($resultado) > 0) {
             </table>
         </div>
     <?php
-}else{
+} else {
     echo "<h2 class='h2-carrito'>No hay datos de tus compras anteriores.</h2>";
 }
     ?>

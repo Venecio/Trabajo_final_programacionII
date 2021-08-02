@@ -39,10 +39,10 @@ include("../menu.php");
                 }
             ?>
                 <tr>
-                    <td><?php echo $row['producto_nombre'] ?></td>
-                    <td><?php echo $row['producto_descripcion'] ?></td>
-                    <td><?php echo "$" . $row['producto_precio'] ?></td>
-                    <td><?php echo '<a class="eliminar" href="' . htmlspecialchars("eliminarproducto.php?id_compra=" . urlencode($row['id_compra'])) . '" >Eliminar</a>' ?></td>
+                    <td class="ctd"><?php echo $row['producto_nombre'] ?></td>
+                    <td class="ctd"><?php echo $row['producto_descripcion'] ?></td>
+                    <td class="ctd"><?php echo "$" . $row['producto_precio'] ?></td>
+                    <td class="ctd"><?php echo '<a class="eliminar" href="' . htmlspecialchars("eliminarproducto.php?id_compra=" . urlencode($row['id_compra'])) . '" >Eliminar</a>' ?></td>
 
                 </tr>
                 <?php
@@ -55,9 +55,9 @@ include("../menu.php");
             ?>
 
             <tr>
-                <th class="cthtotal">Total $<?php echo array_sum($total) ?></th>
-                <th colspan="1" class="cthtotal"><?php echo '<a id="bttn-comprar" href="' . htmlspecialchars("compras.php?numero_compra=" . urlencode($numero_compra)) . '" >Comprar todo</a>' ?></th>
-                <th class="cthtotal" colspan="2"></th>
+                
+                <th colspan="2" class="cthtotal"><?php echo '<a id="bttn-comprar" href="' . htmlspecialchars("compras.php?numero_compra=" . urlencode($numero_compra)) . '" >Comprar todo</a>' ?></th>
+                <th colspan="2" class="cthtotal">Total $<?php echo array_sum($total) ?></th>
             </tr>
         </table>
 

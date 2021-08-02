@@ -2,17 +2,19 @@
     padding: 0;
     margin: 0;
 }
-.contenedor{
+
+.contenedor {
     width: 100%;
     display: block;
     text-align: center;
 }
+
 body {
     width: 100%;
+
 }
 
 .tabla {
-
     border-collapse: collapse;
     width: 50%;
     text-align: center;
@@ -22,23 +24,25 @@ body {
     vertical-align: bottom;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
 }
 
 .hth {
     border: 1px solid black;
+    background-color: coral;
 
 }
-.htd{
+
+.htd {
     border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+
 }
-.htitulo{
-    text-align: center;
-}
-.vercompra{
+
+.vercompra {
     text-decoration: none;
-    padding: 16px 32px;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -49,8 +53,42 @@ body {
     background-color: white;
     color: black;
     border: 2px solid coral;
+    background-color: indianred;
 }
-.vercompra:hover{
+
+.vercompra:hover {
     background-color: #f44336;
-      color: white;
+    color: white;
+}
+
+/*vercompra_historial*/
+.htitulo {
+    text-align: center;
+}
+
+.ver_tabla {
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border: 3px double black;
+    height: 150px;
+    vertical-align: bottom;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.h-th{
+    border: 1px solid black;
+    background-color: coral;
+
+}
+.h-td{
+    border: 1px solid black;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.h-td:hover{
+    background: rgb(194, 191, 191);
 }

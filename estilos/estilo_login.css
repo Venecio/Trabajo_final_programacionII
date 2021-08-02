@@ -33,6 +33,7 @@ html {
     border-radius: 5px;
     margin-bottom: 15px;
     width: auto;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -78,6 +79,7 @@ label {
     border-radius: 5px;
     margin-bottom: 15px;
     width: auto;
+    font-family: 'Roboto', sans-serif;
 }
 .formulario2 .titulo{
     text-align: center;
