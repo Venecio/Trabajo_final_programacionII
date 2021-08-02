@@ -71,7 +71,7 @@
   }
 
   .eliminar,
-  .bttn-comprar {
+  #bttn-comprar {
       text-decoration: none;
       padding: 16px 32px;
       text-align: center;
@@ -92,7 +92,7 @@
       color: white;
   }
 
-  .bttn-comprar:hover {
+  #bttn-comprar:hover {
       background-color: #f44336;
       color: white;
   }

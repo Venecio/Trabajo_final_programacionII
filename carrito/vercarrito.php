@@ -56,7 +56,8 @@ include("../menu.php");
 
             <tr>
                 <th class="cthtotal">Total $<?php echo array_sum($total) ?></th>
-                <th><?php echo '<a class="bttn-comprar" href="' . htmlspecialchars("compras.php?numero_compra=" . urlencode($numero_compra)) . '" >Comprar todo</a>' ?></th>
+                <th colspan="1" class="cthtotal"><?php echo '<a id="bttn-comprar" href="' . htmlspecialchars("compras.php?numero_compra=" . urlencode($numero_compra)) . '" >Comprar todo</a>' ?></th>
+                <th class="cthtotal" colspan="2"></th>
             </tr>
         </table>
 
